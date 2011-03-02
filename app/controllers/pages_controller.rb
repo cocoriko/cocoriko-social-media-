@@ -3,10 +3,10 @@ class PagesController < ApplicationController
   def home
     @title = "Home"
   end
-  def about
+  def news
     @title = "News"
   end
-    def about
+    def classifieds
     @title = "Classifieds"
   end
  def contact
@@ -16,7 +16,7 @@ class PagesController < ApplicationController
   def about
     @title = "About"
   end
-   def about
+   def help
     @title = "Help"
   end
  end
