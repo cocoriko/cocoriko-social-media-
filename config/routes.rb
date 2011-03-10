@@ -1,6 +1,5 @@
 CocorikoWebsiteFirstProduction::Application.routes.draw do
-  get "users/new"
-
+  resources :users
   
   match '/signup',  :to => 'users#new'
 
@@ -10,5 +9,6 @@ CocorikoWebsiteFirstProduction::Application.routes.draw do
   match '/classifieds',    :to => 'pages#classifieds'
   match '/news',    :to => 'pages#news'
   
-   root :to => 'pages#home'
+  root :to => 'pages#home'
 end
+
